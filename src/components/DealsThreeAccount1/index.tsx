@@ -40,7 +40,7 @@ const DealsThreeAccount1: React.FC<DealsThreeAccount1Props> = (props) => {
           </div>
         </div>
         <div className="flex flex-row gap-2.5 items-start justify-start w-full">
-          <div className="flex flex-1 items-start justify-start w-full">
+          <div className="flex flex-1 flex-col items-start justify-start w-full">
             <Text
               className="font-inter font-normal not-italic text-bluegray_200 text-left w-auto"
               variant="body2"

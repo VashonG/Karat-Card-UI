@@ -13,8 +13,8 @@ const DashboardMenu: React.FC<DashboardMenuProps> = (props) => {
     <>
       <aside className={props.className}>
         <div className="flex flex-col gap-12 items-start justify-start w-full">
-          <div className="flex items-center justify-start pl-10 sm:pl-5 pt-8 self-stretch w-auto">
-            <div className="flex items-center justify-start self-stretch w-auto">
+          <div className="flex flex-col items-center justify-start pl-10 sm:pl-5 pt-8 self-stretch w-auto">
+            <div className="flex flex-col items-center justify-start self-stretch w-auto">
               <Img
                 src="images/img_k21.png"
                 className="h-[60px] md:h-auto object-cover w-[180px]"
@@ -22,7 +22,7 @@ const DashboardMenu: React.FC<DashboardMenuProps> = (props) => {
               />
             </div>
           </div>
-          <div className="flex items-start justify-start self-stretch w-auto">
+          <div className="flex flex-col items-start justify-start self-stretch w-auto">
             <div className="flex flex-col gap-6 items-start justify-start md:pl-10 pl-12 sm:pl-5 self-stretch w-auto">
               <div className="flex flex-row gap-3 items-center justify-start ml-auto self-stretch w-auto">
                 <Img src="images/img_home.svg" className="h-6 w-6" alt="home" />

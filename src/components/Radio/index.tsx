@@ -1,12 +1,20 @@
 import React from "react";
 import { ErrorMessage } from "../../components/ErrorMessage";
 
-export type CheckboxProps = Omit<
+const variants = {
+  OutlineBluegray10082:
+    "bg-white_A700_82 border border-bluegray_100_82 border-solid",
+  OutlineYellow900: "bg-white_A700 border-4 border-solid border-yellow_900",
+} as const;
+
+const sizes = { sm: "" } as const;
+
+export type RadioProps = Omit<
   React.DetailedHTMLProps<
     React.InputHTMLAttributes<HTMLInputElement>,
     HTMLInputElement
   >,
-  "size" | "prefix" | "type"
+  "size" | "prefix" | "type" | "onChange"
 > &
   Partial<{
     inputClassName: string;
@@ -15,10 +23,14 @@ export type CheckboxProps = Omit<
     label: string;
     checked: boolean;
     errors: string[];
+    onChange: Function;
     id: string;
+
+    variant: keyof typeof variants;
+    size: keyof typeof sizes;
   }>;
 
-const Radio = React.forwardRef<HTMLInputElement, CheckboxProps>(
+const Radio = React.forwardRef<HTMLInputElement, RadioProps>(
   (
     {
       inputClassName = "",
@@ -28,7 +40,9 @@ const Radio = React.forwardRef<HTMLInputElement, CheckboxProps>(
       label = "",
       checked = false,
       errors = [],
-
+      onChange,
+      variant = "",
+      size = "",
       id = "radio_id",
       ...restProps
     },
@@ -36,19 +50,18 @@ const Radio = React.forwardRef<HTMLInputElement, CheckboxProps>(
   ) => {
     const [value, setValue] = React.useState(checked);
 
-    React.useEffect(() => {
-      setValue(checked);
-    }, [checked]);
-
     const handleChange = (event) => {
       setValue(event.target.checked);
+      if (onChange) onChange(!!event?.target?.checked);
     };
 
     return (
       <>
         <div className={className}>
           <input
-            className={`${inputClassName}`}
+            className={`${inputClassName} ${(size && sizes[size]) || ""} ${
+              (variant && variants[variant]) || ""
+            }`}
             ref={ref}
             type="radio"
             name={name}

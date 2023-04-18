@@ -18,13 +18,15 @@ const WebApplicationOneSelection1: React.FC<
           <Radio
             value="Business"
             className="font-inter font-medium text-gray_900 text-left text-sm"
-            inputClassName="bg-white_A700 border-4 border-solid border-yellow_900 h-4 mr-[5px] w-4"
+            inputClassName="h-4 mr-[5px] w-4"
             checked={false}
             name="label"
             label="Business"
             id="Business"
+            size="sm"
+            variant="OutlineYellow900"
           ></Radio>
-          <div className="flex items-start justify-start sm:pl-5 pl-7 self-stretch w-auto">
+          <div className="flex flex-col items-start justify-start sm:pl-5 pl-7 self-stretch w-auto">
             <Text
               className="font-inter font-normal leading-[18.00px] max-w-[162px] md:max-w-full not-italic text-bluegray_400 text-left"
               variant="body2"

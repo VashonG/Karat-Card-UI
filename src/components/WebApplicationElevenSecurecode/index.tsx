@@ -29,22 +29,52 @@ const WebApplicationElevenSecurecode: React.FC<
           {props?.securecode}
         </Text>
         <div className="flex sm:flex-col flex-row gap-2 items-start justify-start self-stretch w-auto md:w-full">
-          <Button className="border border-bluegray_50 border-solid cursor-pointer font-inter font-normal not-italic px-3.5 py-2.5 rounded-[20px] text-3xl sm:text-[26px] md:text-[28px] text-center text-gray_900 w-14">
+          <Button
+            className="cursor-pointer font-inter font-normal h-14 not-italic text-3xl sm:text-[26px] md:text-[28px] text-center text-gray_900 w-14"
+            shape="CircleBorder20"
+            size="md"
+            variant="OutlineBluegray50"
+          >
             {props?.seven}
           </Button>
-          <Button className="border border-bluegray_50 border-solid cursor-pointer font-inter font-normal not-italic px-3.5 py-2.5 rounded-[20px] text-3xl sm:text-[26px] md:text-[28px] text-center text-gray_900 w-14">
+          <Button
+            className="cursor-pointer font-inter font-normal h-14 not-italic text-3xl sm:text-[26px] md:text-[28px] text-center text-gray_900 w-14"
+            shape="CircleBorder20"
+            size="md"
+            variant="OutlineBluegray50"
+          >
             {props?.eight}
           </Button>
-          <Button className="border border-bluegray_50 border-solid cursor-pointer font-inter font-normal not-italic px-3.5 py-2.5 rounded-[20px] text-3xl sm:text-[26px] md:text-[28px] text-center text-gray_300 w-14">
+          <Button
+            className="cursor-pointer font-inter font-normal h-14 not-italic text-3xl sm:text-[26px] md:text-[28px] text-center text-gray_300 w-14"
+            shape="CircleBorder20"
+            size="md"
+            variant="OutlineBluegray50"
+          >
             {props?.zero}
           </Button>
-          <Button className="border border-bluegray_50 border-solid cursor-pointer font-inter font-normal not-italic px-3.5 py-2.5 rounded-[20px] text-3xl sm:text-[26px] md:text-[28px] text-bluegray_50 text-center w-14">
+          <Button
+            className="cursor-pointer font-inter font-normal h-14 not-italic text-3xl sm:text-[26px] md:text-[28px] text-bluegray_50 text-center w-14"
+            shape="CircleBorder20"
+            size="md"
+            variant="OutlineBluegray50"
+          >
             {props?.zeroOne}
           </Button>
-          <Button className="border border-bluegray_50 border-solid cursor-pointer font-inter font-normal not-italic px-3.5 py-2.5 rounded-[20px] text-3xl sm:text-[26px] md:text-[28px] text-bluegray_50 text-center w-14">
+          <Button
+            className="cursor-pointer font-inter font-normal h-14 not-italic text-3xl sm:text-[26px] md:text-[28px] text-bluegray_50 text-center w-14"
+            shape="CircleBorder20"
+            size="md"
+            variant="OutlineBluegray50"
+          >
             {props?.zeroTwo}
           </Button>
-          <Button className="border border-bluegray_50 border-solid cursor-pointer font-inter font-normal not-italic px-3.5 py-2.5 rounded-[20px] text-3xl sm:text-[26px] md:text-[28px] text-bluegray_50 text-center w-14">
+          <Button
+            className="cursor-pointer font-inter font-normal h-14 not-italic text-3xl sm:text-[26px] md:text-[28px] text-bluegray_50 text-center w-14"
+            shape="CircleBorder20"
+            size="md"
+            variant="OutlineBluegray50"
+          >
             {props?.zeroThree}
           </Button>
         </div>

@@ -9,4 +9,9 @@ export default {
 
 export const SampleRadio: Story<any> = (args) => <Radio {...args} />;
 
-SampleRadio.args = { label: "Radio", inputClassName: "mr-1" };
+SampleRadio.args = {
+  label: "Radio",
+  variant: "OutlineBluegray10082",
+  size: "sm",
+  inputClassName: "mr-1",
+};

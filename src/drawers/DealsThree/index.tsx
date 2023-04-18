@@ -18,10 +18,10 @@ const DealsThreeDrawer = (props) => {
     <>
       <Drawer placement="right" className="!w-1/2" {...props}>
         <div>
-          <div className="flex font-inter items-end justify-start mx-auto md:pl-10 sm:pl-5 pl-[731px] sm:w-full md:w-full">
-            <div className="bg-white_A700 flex h-[1538px] md:h-auto items-center justify-start max-w-[709px] p-8 md:px-5 w-full">
+          <div className="flex flex-col font-inter items-end justify-start mx-auto md:pl-10 sm:pl-5 pl-[731px] sm:w-full md:w-full">
+            <div className="bg-white_A700 flex flex-col h-[1538px] md:h-auto items-center justify-start max-w-[709px] p-8 md:px-5 w-full">
               <div className="flex flex-col gap-5 items-center justify-start w-full">
-                <div className="flex items-start justify-start w-full">
+                <div className="flex flex-col items-start justify-start w-full">
                   <Img
                     src="images/img_arrowright_gray_800.svg"
                     className="h-6 w-6"
@@ -29,10 +29,10 @@ const DealsThreeDrawer = (props) => {
                   />
                 </div>
                 <div className="flex flex-col gap-12 items-start justify-start w-full">
-                  <div className="flex items-center justify-start w-full">
+                  <div className="flex flex-col items-center justify-start w-full">
                     <div className="flex flex-col gap-2 items-start justify-start self-stretch w-auto">
                       <div className="flex flex-row gap-4 items-center justify-start self-stretch w-auto">
-                        <div className="flex items-center justify-center self-stretch w-auto">
+                        <div className="flex flex-col items-center justify-center self-stretch w-auto">
                           <Text
                             className="text-center text-gray_900 w-auto"
                             as="h3"
@@ -46,7 +46,7 @@ const DealsThreeDrawer = (props) => {
                           labelTwo="Sent"
                         />
                       </div>
-                      <div className="flex items-start justify-start self-stretch w-auto">
+                      <div className="flex flex-col items-start justify-start self-stretch w-auto">
                         <Text
                           className="font-normal not-italic text-bluegray_400 text-center w-auto"
                           variant="body2"
@@ -126,7 +126,7 @@ const DealsThreeDrawer = (props) => {
                       >
                         <div className="bg-white_A700 flex flex-1 sm:flex-col flex-row sm:gap-10 items-center justify-between my-0 outline outline-[0.5px] outline-gray_100 sm:px-5 px-6 py-4 rounded-bl-none rounded-br-none rounded-tl-[24px] rounded-tr-[24px] w-full">
                           <div className="flex flex-row gap-[50px] items-center justify-start self-stretch w-auto">
-                            <div className="flex items-center justify-start w-[200px]">
+                            <div className="flex flex-col items-center justify-start w-[200px]">
                               <Text
                                 className="font-normal not-italic text-bluegray_400 text-left w-auto"
                                 variant="body1"
@@ -134,7 +134,7 @@ const DealsThreeDrawer = (props) => {
                                 Description
                               </Text>
                             </div>
-                            <div className="flex items-center justify-start w-20">
+                            <div className="flex flex-col items-center justify-start w-20">
                               <Text
                                 className="font-normal not-italic text-bluegray_400 text-left w-auto"
                                 variant="body1"
@@ -144,7 +144,7 @@ const DealsThreeDrawer = (props) => {
                             </div>
                           </div>
                           <div className="flex flex-row gap-[50px] items-center justify-end self-stretch w-auto">
-                            <div className="flex items-center justify-end w-20">
+                            <div className="flex flex-col items-center justify-end w-20">
                               <Text
                                 className="font-normal not-italic text-bluegray_400 text-right w-auto"
                                 variant="body1"
@@ -152,7 +152,7 @@ const DealsThreeDrawer = (props) => {
                                 Amount
                               </Text>
                             </div>
-                            <div className="flex items-center justify-end w-20">
+                            <div className="flex flex-col items-center justify-end w-20">
                               <Text
                                 className="font-normal not-italic text-bluegray_400 text-right w-auto"
                                 variant="body1"
@@ -182,8 +182,8 @@ const DealsThreeDrawer = (props) => {
                         />
                       </List>
                       <div className="flex flex-row sm:gap-10 gap-[279px] items-center justify-between w-full">
-                        <div className="flex items-start justify-start self-stretch w-auto">
-                          <div className="flex items-start justify-start px-3 py-2.5 self-stretch w-auto">
+                        <div className="flex flex-col items-start justify-start self-stretch w-auto">
+                          <div className="flex flex-col items-start justify-start px-3 py-2.5 self-stretch w-auto">
                             <Text
                               className="font-normal not-italic text-bluegray_700 text-left w-auto"
                               variant="body1"
@@ -193,10 +193,20 @@ const DealsThreeDrawer = (props) => {
                           </div>
                         </div>
                         <div className="flex flex-1 flex-row gap-3 items-start justify-end w-full">
-                          <Button className="bg-white_A700 border border-bluegray_50 border-solid cursor-pointer font-medium min-w-[66px] px-4 py-2.5 rounded-[20px] text-center text-gray_900 text-sm w-auto">
+                          <Button
+                            className="cursor-pointer font-medium min-w-[66px] text-center text-gray_900 text-sm w-auto"
+                            shape="CircleBorder20"
+                            size="md"
+                            variant="White"
+                          >
                             Prev.
                           </Button>
-                          <Button className="bg-white_A700 border border-bluegray_50 border-solid cursor-pointer font-medium min-w-[64px] px-4 py-2.5 rounded-[20px] text-center text-gray_900 text-sm w-auto">
+                          <Button
+                            className="cursor-pointer font-medium min-w-[64px] text-center text-gray_900 text-sm w-auto"
+                            shape="CircleBorder20"
+                            size="md"
+                            variant="White"
+                          >
                             Next
                           </Button>
                         </div>

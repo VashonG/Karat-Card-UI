@@ -56,7 +56,7 @@ const DashboardTable: React.FC<DashboardTableProps> = (props) => {
           orientation="horizontal"
         >
           <div className="flex sm:flex-1 flex-row gap-24 items-center justify-start self-stretch w-auto sm:w-full">
-            <div className="flex items-center justify-start w-[200px]">
+            <div className="flex flex-col items-center justify-start w-[200px]">
               <Text
                 className="font-inter font-normal not-italic text-bluegray_400 text-left w-auto"
                 variant="body1"
@@ -64,7 +64,7 @@ const DashboardTable: React.FC<DashboardTableProps> = (props) => {
                 {props?.labelOne1}
               </Text>
             </div>
-            <div className="flex items-center justify-start w-20">
+            <div className="flex flex-col items-center justify-start w-20">
               <Text
                 className="font-inter font-normal not-italic text-bluegray_400 text-left w-auto"
                 variant="body1"
@@ -74,7 +74,7 @@ const DashboardTable: React.FC<DashboardTableProps> = (props) => {
             </div>
           </div>
           <div className="flex flex-row gap-24 items-center justify-end md:pr-10 sm:pr-5 pr-[100px] self-stretch w-auto">
-            <div className="flex items-center justify-end w-20">
+            <div className="flex flex-col items-center justify-end w-20">
               {!!props?.label1 ? (
                 <Text
                   className="font-inter font-normal not-italic text-bluegray_400 text-right w-auto"
@@ -84,7 +84,7 @@ const DashboardTable: React.FC<DashboardTableProps> = (props) => {
                 </Text>
               ) : null}
             </div>
-            <div className="flex items-center justify-start w-20">
+            <div className="flex flex-col items-center justify-start w-20">
               <Text
                 className="font-inter font-normal not-italic text-bluegray_400 text-left w-auto"
                 variant="body1"
@@ -100,7 +100,7 @@ const DashboardTable: React.FC<DashboardTableProps> = (props) => {
         >
           <div className="bg-white_A700 flex flex-1 md:flex-col flex-row md:gap-10 items-center justify-between outline outline-[0.5px] outline-gray_100 p-6 sm:px-5 w-full">
             <div className="flex sm:flex-1 flex-row gap-24 items-center justify-start self-stretch w-auto sm:w-full">
-              <div className="flex items-center justify-start w-[200px]">
+              <div className="flex flex-col items-center justify-start w-[200px]">
                 <div className="flex flex-col gap-1 items-start justify-start self-stretch w-auto">
                   <Text
                     className="font-inter font-medium text-gray_900 text-left w-auto"
@@ -116,7 +116,7 @@ const DashboardTable: React.FC<DashboardTableProps> = (props) => {
                   </Text>
                 </div>
               </div>
-              <div className="flex items-center justify-start w-20">
+              <div className="flex flex-col items-center justify-start w-20">
                 <Text
                   className="font-inter font-normal not-italic text-gray_900 text-left w-auto"
                   variant="body1"
@@ -126,7 +126,7 @@ const DashboardTable: React.FC<DashboardTableProps> = (props) => {
               </div>
             </div>
             <div className="flex flex-row gap-24 items-center justify-start md:pr-10 sm:pr-5 pr-[100px] self-stretch w-auto">
-              <div className="flex items-center justify-end w-20">
+              <div className="flex flex-col items-center justify-end w-20">
                 {!!props?.price5 ? (
                   <Text
                     className="font-inter font-medium text-gray_900 text-right w-auto"
@@ -136,8 +136,8 @@ const DashboardTable: React.FC<DashboardTableProps> = (props) => {
                   </Text>
                 ) : null}
               </div>
-              <div className="flex items-start justify-start w-[81px]">
-                <div className="bg-orange_51 flex items-start justify-start px-2 py-[3px] rounded-[11px] self-stretch w-auto">
+              <div className="flex flex-col items-start justify-start w-[81px]">
+                <div className="bg-orange_51 flex flex-col items-start justify-start px-2 py-[3px] rounded-[11px] self-stretch w-auto">
                   <div className="flex flex-row gap-2 items-center justify-start self-stretch w-auto">
                     {!!props?.ellipseone2 ? (
                       <div className="bg-orange_A200 h-1.5 rounded-[50%] w-1.5"></div>
@@ -158,7 +158,7 @@ const DashboardTable: React.FC<DashboardTableProps> = (props) => {
           <div className="bg-gray_51 flex flex-1 md:flex-col flex-row md:gap-10 items-center justify-between outline outline-[0.5px] outline-gray_100 p-6 sm:px-5 w-full">
             <div className="flex sm:flex-1 flex-row gap-24 items-center justify-start self-stretch w-auto sm:w-full">
               <div className="flex relative w-[55%]">
-                <div className="flex items-center justify-start ml-[undefinedpx] mr-auto my-auto w-[200px] z-[1]">
+                <div className="flex flex-col items-center justify-start ml-[undefinedpx] mr-auto my-auto w-[200px] z-[1]">
                   <div className="flex flex-col gap-1 items-start justify-start self-stretch w-auto">
                     <Text
                       className="font-inter font-medium text-gray_900 text-left w-auto"
@@ -182,7 +182,7 @@ const DashboardTable: React.FC<DashboardTableProps> = (props) => {
                   />
                 ) : null}
               </div>
-              <div className="flex items-center justify-start w-20">
+              <div className="flex flex-col items-center justify-start w-20">
                 <Text
                   className="font-inter font-normal not-italic text-gray_900 text-left w-auto"
                   variant="body1"
@@ -191,10 +191,10 @@ const DashboardTable: React.FC<DashboardTableProps> = (props) => {
                 </Text>
               </div>
             </div>
-            <div className="flex items-start justify-start self-stretch w-auto">
-              <div className="flex items-start justify-start self-stretch w-auto">
+            <div className="flex flex-col items-start justify-start self-stretch w-auto">
+              <div className="flex flex-col items-start justify-start self-stretch w-auto">
                 <div className="flex flex-row gap-24 items-center justify-start self-stretch w-auto">
-                  <div className="flex items-center justify-end w-20">
+                  <div className="flex flex-col items-center justify-end w-20">
                     {!!props?.price5 ? (
                       <Text
                         className="font-inter font-medium text-gray_900 text-right w-auto"
@@ -204,8 +204,8 @@ const DashboardTable: React.FC<DashboardTableProps> = (props) => {
                       </Text>
                     ) : null}
                   </div>
-                  <div className="flex items-start justify-start w-20">
-                    <div className="bg-red-100 flex items-start justify-start px-2 py-[3px] rounded-[11px] self-stretch w-auto">
+                  <div className="flex flex-col items-start justify-start w-20">
+                    <div className="bg-red-100 flex flex-col items-start justify-start px-2 py-[3px] rounded-[11px] self-stretch w-auto">
                       <div className="flex flex-row gap-2 items-center justify-start self-stretch w-auto">
                         {!!props?.ellipseone1 ? (
                           <div className="bg-red_300 h-1.5 rounded-[50%] w-1.5"></div>
@@ -227,7 +227,7 @@ const DashboardTable: React.FC<DashboardTableProps> = (props) => {
           </div>
           <div className="bg-white_A700 flex flex-1 md:flex-col flex-row md:gap-10 items-center justify-between outline outline-[0.5px] outline-gray_100 p-6 sm:px-5 w-full">
             <div className="flex sm:flex-1 flex-row gap-24 items-center justify-start self-stretch w-auto sm:w-full">
-              <div className="flex items-center justify-start w-[200px]">
+              <div className="flex flex-col items-center justify-start w-[200px]">
                 <div className="flex flex-col gap-1 items-start justify-start self-stretch w-auto">
                   <Text
                     className="font-inter font-medium text-gray_900 text-left w-auto"
@@ -243,7 +243,7 @@ const DashboardTable: React.FC<DashboardTableProps> = (props) => {
                   </Text>
                 </div>
               </div>
-              <div className="flex items-center justify-start w-20">
+              <div className="flex flex-col items-center justify-start w-20">
                 <Text
                   className="font-inter font-normal not-italic text-gray_900 text-left w-auto"
                   variant="body1"
@@ -253,7 +253,7 @@ const DashboardTable: React.FC<DashboardTableProps> = (props) => {
               </div>
             </div>
             <div className="flex flex-row gap-24 items-center justify-start md:pr-10 sm:pr-5 pr-[100px] self-stretch w-auto">
-              <div className="flex items-center justify-end w-20">
+              <div className="flex flex-col items-center justify-end w-20">
                 {!!props?.price5 ? (
                   <Text
                     className="font-inter font-medium text-gray_900 text-right w-auto"
@@ -263,8 +263,8 @@ const DashboardTable: React.FC<DashboardTableProps> = (props) => {
                   </Text>
                 ) : null}
               </div>
-              <div className="flex items-start justify-start w-[104px]">
-                <div className="bg-green_50 flex items-start justify-start px-2 py-[3px] rounded-[11px] self-stretch w-auto">
+              <div className="flex flex-col items-start justify-start w-[104px]">
+                <div className="bg-green_50 flex flex-col items-start justify-start px-2 py-[3px] rounded-[11px] self-stretch w-auto">
                   <div className="flex flex-row gap-2 items-center justify-start self-stretch w-auto">
                     <div className="bg-bluegray_200 h-1.5 rounded-[50%] w-1.5"></div>
                     <Text
@@ -280,7 +280,7 @@ const DashboardTable: React.FC<DashboardTableProps> = (props) => {
           </div>
           <div className="bg-white_A700 flex flex-1 md:flex-col flex-row md:gap-10 items-center justify-between outline outline-[0.5px] outline-gray_100 p-6 sm:px-5 w-full">
             <div className="flex sm:flex-1 flex-row gap-24 items-center justify-start self-stretch w-auto sm:w-full">
-              <div className="flex items-center justify-start w-[200px]">
+              <div className="flex flex-col items-center justify-start w-[200px]">
                 <div className="flex flex-col gap-1 items-start justify-start self-stretch w-auto">
                   <Text
                     className="font-inter font-medium text-gray_900 text-left w-auto"
@@ -296,7 +296,7 @@ const DashboardTable: React.FC<DashboardTableProps> = (props) => {
                   </Text>
                 </div>
               </div>
-              <div className="flex items-center justify-start w-20">
+              <div className="flex flex-col items-center justify-start w-20">
                 <Text
                   className="font-inter font-normal not-italic text-gray_900 text-left w-auto"
                   variant="body1"
@@ -306,7 +306,7 @@ const DashboardTable: React.FC<DashboardTableProps> = (props) => {
               </div>
             </div>
             <div className="flex flex-row gap-24 items-center justify-start md:pr-10 sm:pr-5 pr-[100px] self-stretch w-auto">
-              <div className="flex items-center justify-end w-20">
+              <div className="flex flex-col items-center justify-end w-20">
                 {!!props?.price5 ? (
                   <Text
                     className="font-inter font-medium text-gray_900 text-right w-auto"
@@ -316,8 +316,8 @@ const DashboardTable: React.FC<DashboardTableProps> = (props) => {
                   </Text>
                 ) : null}
               </div>
-              <div className="flex items-start justify-start w-[104px]">
-                <div className="bg-green_50 flex items-start justify-start px-2 py-[3px] rounded-[11px] self-stretch w-auto">
+              <div className="flex flex-col items-start justify-start w-[104px]">
+                <div className="bg-green_50 flex flex-col items-start justify-start px-2 py-[3px] rounded-[11px] self-stretch w-auto">
                   <div className="flex flex-row gap-2 items-center justify-start self-stretch w-auto">
                     <div className="bg-bluegray_200 h-1.5 rounded-[50%] w-1.5"></div>
                     <Text
@@ -333,7 +333,7 @@ const DashboardTable: React.FC<DashboardTableProps> = (props) => {
           </div>
           <div className="bg-white_A700 flex flex-1 md:flex-col flex-row md:gap-10 items-center justify-between outline outline-[0.5px] outline-gray_100 p-6 sm:px-5 w-full">
             <div className="flex sm:flex-1 flex-row gap-24 items-center justify-start self-stretch w-auto sm:w-full">
-              <div className="flex items-center justify-start w-[200px]">
+              <div className="flex flex-col items-center justify-start w-[200px]">
                 <div className="flex flex-col gap-1 items-start justify-start self-stretch w-auto">
                   <Text
                     className="font-inter font-medium text-gray_900 text-left w-auto"
@@ -349,7 +349,7 @@ const DashboardTable: React.FC<DashboardTableProps> = (props) => {
                   </Text>
                 </div>
               </div>
-              <div className="flex items-center justify-start w-20">
+              <div className="flex flex-col items-center justify-start w-20">
                 <Text
                   className="font-inter font-normal not-italic text-gray_900 text-left w-auto"
                   variant="body1"
@@ -359,7 +359,7 @@ const DashboardTable: React.FC<DashboardTableProps> = (props) => {
               </div>
             </div>
             <div className="flex flex-row gap-24 items-center justify-start md:pr-10 sm:pr-5 pr-[100px] self-stretch w-auto">
-              <div className="flex items-center justify-end w-20">
+              <div className="flex flex-col items-center justify-end w-20">
                 {!!props?.price5 ? (
                   <Text
                     className="font-inter font-medium text-gray_900 text-right w-auto"
@@ -369,8 +369,8 @@ const DashboardTable: React.FC<DashboardTableProps> = (props) => {
                   </Text>
                 ) : null}
               </div>
-              <div className="flex items-start justify-start w-[81px]">
-                <div className="bg-orange_51 flex items-start justify-start px-2 py-[3px] rounded-[11px] self-stretch w-auto">
+              <div className="flex flex-col items-start justify-start w-[81px]">
+                <div className="bg-orange_51 flex flex-col items-start justify-start px-2 py-[3px] rounded-[11px] self-stretch w-auto">
                   <div className="flex flex-row gap-2 items-center justify-start self-stretch w-auto">
                     {!!props?.ellipseone2 ? (
                       <div className="bg-orange_A200 h-1.5 rounded-[50%] w-1.5"></div>
@@ -390,7 +390,7 @@ const DashboardTable: React.FC<DashboardTableProps> = (props) => {
           </div>
           <div className="bg-white_A700 flex flex-1 md:flex-col flex-row md:gap-10 items-center justify-between outline outline-[0.5px] outline-gray_100 p-6 sm:px-5 rounded-bl-[24px] rounded-br-[24px] rounded-tl-none rounded-tr-none w-full">
             <div className="flex sm:flex-1 flex-row gap-24 items-center justify-start self-stretch w-auto sm:w-full">
-              <div className="flex items-center justify-start w-[200px]">
+              <div className="flex flex-col items-center justify-start w-[200px]">
                 <div className="flex flex-col gap-1 items-start justify-start self-stretch w-auto">
                   <Text
                     className="font-inter font-medium text-gray_900 text-left w-auto"
@@ -406,7 +406,7 @@ const DashboardTable: React.FC<DashboardTableProps> = (props) => {
                   </Text>
                 </div>
               </div>
-              <div className="flex items-center justify-start w-20">
+              <div className="flex flex-col items-center justify-start w-20">
                 <Text
                   className="font-inter font-normal not-italic text-gray_900 text-left w-auto"
                   variant="body1"
@@ -416,7 +416,7 @@ const DashboardTable: React.FC<DashboardTableProps> = (props) => {
               </div>
             </div>
             <div className="flex flex-row gap-24 items-center justify-start md:pr-10 sm:pr-5 pr-[100px] self-stretch w-auto">
-              <div className="flex items-center justify-end w-20">
+              <div className="flex flex-col items-center justify-end w-20">
                 {!!props?.price5 ? (
                   <Text
                     className="font-inter font-medium text-gray_900 text-right w-auto"
@@ -426,8 +426,8 @@ const DashboardTable: React.FC<DashboardTableProps> = (props) => {
                   </Text>
                 ) : null}
               </div>
-              <div className="flex items-start justify-start w-[152px]">
-                <div className="bg-gray_100 flex items-start justify-start px-2 py-[3px] rounded-[11px] self-stretch w-auto">
+              <div className="flex flex-col items-start justify-start w-[152px]">
+                <div className="bg-gray_100 flex flex-col items-start justify-start px-2 py-[3px] rounded-[11px] self-stretch w-auto">
                   <div className="flex flex-row gap-2 items-center justify-start self-stretch w-auto">
                     <div className="bg-bluegray_200 h-1.5 rounded-[50%] w-1.5"></div>
                     <Text

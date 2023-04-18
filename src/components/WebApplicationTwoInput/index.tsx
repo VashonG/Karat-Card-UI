@@ -23,10 +23,13 @@ const WebApplicationTwoInput: React.FC<WebApplicationTwoInputProps> = (
         {!!props?.inputFive ? (
           <Input
             value={props?.inputFive}
-            wrapClassName="border border-bluegray_50 border-solid px-3.5 py-2.5 rounded-[20px] w-full"
+            wrapClassName="w-full"
             className="font-inter font-normal not-italic p-0 placeholder:text-gray_900 text-gray_900 text-left text-sm w-full"
             name="input_Five"
             placeholder="721-07-4426"
+            shape="CircleBorder20"
+            size="md"
+            variant="OutlineBluegray50"
           ></Input>
         ) : null}
         {!!props?.description ? (

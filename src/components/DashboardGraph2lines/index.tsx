@@ -24,7 +24,7 @@ const DashboardGraph2lines: React.FC<DashboardGraph2linesProps> = (props) => {
   return (
     <>
       <div className={props.className}>
-        <div className="flex items-start justify-start w-[304px]">
+        <div className="flex flex-col items-start justify-start w-[304px]">
           <div className="flex flex-col gap-1 items-start justify-start self-stretch w-auto">
             <Text
               className="font-inter font-medium text-gray_900 text-left w-auto"
@@ -40,7 +40,7 @@ const DashboardGraph2lines: React.FC<DashboardGraph2linesProps> = (props) => {
             </Text>
           </div>
         </div>
-        <div className="flex items-start justify-start self-stretch w-auto">
+        <div className="flex flex-col items-start justify-start self-stretch w-auto">
           <div className="flex flex-col gap-[7px] items-start justify-start w-full">
             <Text
               className="font-inter font-normal not-italic text-gray_900 text-left w-auto"

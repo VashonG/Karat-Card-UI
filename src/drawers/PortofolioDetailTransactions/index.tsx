@@ -14,10 +14,10 @@ const PortofolioDetailTransactionsDrawer = (props) => {
     <>
       <Drawer placement="right" className="!w-[41%]" {...props}>
         <div>
-          <div className="flex font-jetbrainsmono items-end justify-start mx-auto md:pl-10 sm:pl-5 pl-[850px] sm:w-full md:w-full">
-            <div className="bg-white_A700 flex h-[1024px] md:h-auto items-center justify-start p-8 md:px-5 w-[590px] sm:w-full">
+          <div className="flex flex-col font-jetbrainsmono items-end justify-start mx-auto md:pl-10 sm:pl-5 pl-[850px] sm:w-full md:w-full">
+            <div className="bg-white_A700 flex flex-col h-[1024px] md:h-auto items-center justify-start p-8 md:px-5 w-[590px] sm:w-full">
               <div className="flex flex-col gap-5 items-center justify-start w-full">
-                <div className="flex items-start justify-start w-full">
+                <div className="flex flex-col items-start justify-start w-full">
                   <Img
                     src="images/img_arrowright_gray_800.svg"
                     className="h-6 w-6"
@@ -25,7 +25,7 @@ const PortofolioDetailTransactionsDrawer = (props) => {
                   />
                 </div>
                 <div className="flex flex-col gap-12 items-center justify-start w-full">
-                  <div className="flex items-center justify-start self-stretch w-auto">
+                  <div className="flex flex-col items-center justify-start self-stretch w-auto">
                     <PortofolioDetailDetailsCreditcard
                       className="bg-lime_50 flex flex-col items-end justify-start p-5 rounded-[12px] shadow-bs1 w-full"
                       neerajchinwan="Neeraj Chinwan"
@@ -47,7 +47,7 @@ const PortofolioDetailTransactionsDrawer = (props) => {
                     >
                       <div className="bg-white_A700 flex flex-1 sm:flex-col flex-row sm:gap-10 items-center justify-between my-0 outline outline-[0.5px] outline-gray_100 sm:px-5 px-6 py-4 rounded-bl-none rounded-br-none rounded-tl-[24px] rounded-tr-[24px] w-full">
                         <div className="flex flex-row gap-[50px] items-center justify-start self-stretch w-auto">
-                          <div className="flex items-center justify-start w-[89px]">
+                          <div className="flex flex-col items-center justify-start w-[89px]">
                             <Text
                               className="font-normal not-italic text-bluegray_400 text-left w-auto"
                               variant="body1"
@@ -55,7 +55,7 @@ const PortofolioDetailTransactionsDrawer = (props) => {
                               Type
                             </Text>
                           </div>
-                          <div className="flex items-center justify-start w-20">
+                          <div className="flex flex-col items-center justify-start w-20">
                             <Text
                               className="font-normal not-italic text-bluegray_400 text-left w-auto"
                               variant="body1"
@@ -65,7 +65,7 @@ const PortofolioDetailTransactionsDrawer = (props) => {
                           </div>
                         </div>
                         <div className="flex flex-row gap-[50px] items-center justify-end sm:pr-5 pr-6 self-stretch w-auto">
-                          <div className="flex items-center justify-end w-20">
+                          <div className="flex flex-col items-center justify-end w-20">
                             <Text
                               className="font-normal not-italic text-bluegray_400 text-right w-auto"
                               variant="body1"
@@ -73,7 +73,7 @@ const PortofolioDetailTransactionsDrawer = (props) => {
                               Amount
                             </Text>
                           </div>
-                          <div className="flex items-center justify-start w-20">
+                          <div className="flex flex-col items-center justify-start w-20">
                             <Text
                               className="font-normal not-italic text-bluegray_400 text-left w-auto"
                               variant="body1"
@@ -109,8 +109,8 @@ const PortofolioDetailTransactionsDrawer = (props) => {
                       />
                     </List>
                     <div className="flex flex-row sm:gap-10 gap-[279px] items-center justify-between w-full">
-                      <div className="flex items-start justify-start self-stretch w-auto">
-                        <div className="flex items-start justify-start px-3 py-2.5 self-stretch w-auto">
+                      <div className="flex flex-col items-start justify-start self-stretch w-auto">
+                        <div className="flex flex-col items-start justify-start px-3 py-2.5 self-stretch w-auto">
                           <Text
                             className="font-normal not-italic text-bluegray_700 text-left w-auto"
                             variant="body1"
@@ -120,10 +120,20 @@ const PortofolioDetailTransactionsDrawer = (props) => {
                         </div>
                       </div>
                       <div className="flex flex-1 flex-row gap-3 items-start justify-end w-full">
-                        <Button className="bg-white_A700 border border-bluegray_50 border-solid cursor-pointer font-medium min-w-[66px] px-4 py-2.5 rounded-[20px] text-center text-gray_900 text-sm w-auto">
+                        <Button
+                          className="cursor-pointer font-medium min-w-[66px] text-center text-gray_900 text-sm w-auto"
+                          shape="CircleBorder20"
+                          size="md"
+                          variant="White"
+                        >
                           Prev.
                         </Button>
-                        <Button className="bg-white_A700 border border-bluegray_50 border-solid cursor-pointer font-medium min-w-[64px] px-4 py-2.5 rounded-[20px] text-center text-gray_900 text-sm w-auto">
+                        <Button
+                          className="cursor-pointer font-medium min-w-[64px] text-center text-gray_900 text-sm w-auto"
+                          shape="CircleBorder20"
+                          size="md"
+                          variant="White"
+                        >
                           Next
                         </Button>
                       </div>

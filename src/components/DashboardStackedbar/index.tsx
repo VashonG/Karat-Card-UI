@@ -83,7 +83,7 @@ const DashboardStackedbar: React.FC<DashboardStackedbarProps> = (props) => {
               </div>
             </List>
             <div className="flex flex-row items-start justify-between w-full">
-              <div className="flex items-center justify-start self-stretch w-auto">
+              <div className="flex flex-col items-center justify-start self-stretch w-auto">
                 <Text
                   className="font-inter font-normal not-italic text-gray_900 text-left w-auto"
                   variant="body1"

@@ -9,9 +9,9 @@ const WebApplicationElevenPage: React.FC = () => {
 
   return (
     <>
-      <div className="bg-white_A700 flex font-inter items-center justify-start mx-auto p-[100px] md:px-10 sm:px-5 w-full">
+      <div className="bg-white_A700 flex flex-col font-inter items-center justify-start mx-auto p-[100px] md:px-10 sm:px-5 w-full">
         <div className="flex flex-col gap-8 items-center justify-start max-w-[720px] mb-[316px] w-full">
-          <div className="flex items-center justify-center w-full">
+          <div className="flex flex-col items-center justify-center w-full">
             <Img
               src="images/img_k21.png"
               className="h-[50px] md:h-auto object-cover w-[150px]"
@@ -108,12 +108,15 @@ const WebApplicationElevenPage: React.FC = () => {
                   />
                   <div className="flex flex-row gap-3 items-start justify-start self-stretch w-auto">
                     <Button
-                      className="common-pointer bg-yellow_900 cursor-pointer font-medium min-w-[72px] px-4 py-2.5 rounded-[20px] text-center text-sm text-white_A700 w-auto"
+                      className="common-pointer cursor-pointer font-medium min-w-[72px] text-center text-sm text-white_A700 w-auto"
                       onClick={() => navigate("/webapplicationtwelve")}
+                      shape="CircleBorder20"
+                      size="md"
+                      variant="FillYellow900"
                     >
                       Verify
                     </Button>
-                    <div className="flex items-center justify-center px-4 py-2.5 rounded-lg self-stretch w-auto">
+                    <div className="flex flex-col items-center justify-center px-4 py-2.5 rounded-lg self-stretch w-auto">
                       <Text
                         className="font-medium text-gray_900 text-left w-auto"
                         variant="body1"
@@ -125,14 +128,14 @@ const WebApplicationElevenPage: React.FC = () => {
                 </div>
               </div>
             </div>
-            <div className="flex items-center justify-start px-1.5 w-full">
-              <div className="h-10 relative w-[79px]">
+            <div className="flex flex-col items-center justify-start px-1.5 w-full">
+              <div className="h-10 md:h-[37px] relative w-[79px]">
                 <Img
                   src="images/img_arrowleft.svg"
                   className="absolute h-5 inset-y-[0] left-[0] my-auto w-5"
                   alt="arrowleft"
                 />
-                <div className="absolute flex h-full inset-y-[0] items-center justify-center my-auto px-4 py-2.5 right-[0] rounded-lg self-stretch w-auto">
+                <div className="absolute flex flex-col h-full inset-y-[0] items-center justify-center my-auto px-4 py-2.5 right-[0] rounded-lg self-stretch w-auto">
                   <Text
                     className="font-medium text-bluegray_400 text-left w-auto"
                     variant="body1"
