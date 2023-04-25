@@ -5,14 +5,14 @@ import { List, Text, Img, Button } from "components";
 const BillPayModalPage: React.FC = () => {
   return (
     <>
-      <div className="bg-gray_902 flex font-inter items-center justify-center mx-auto p-20 md:px-10 sm:px-5 w-full">
+      <div className="bg-gray_902 flex flex-col font-inter items-center justify-center mx-auto p-20 md:px-10 sm:px-5 w-full">
         <List
           className="sm:flex-col flex-row gap-9 grid sm:grid-cols-1 md:grid-cols-2 grid-cols-4 justify-start max-w-7xl mb-[238px] mt-[235px] mx-auto self-stretch w-full"
           orientation="horizontal"
         >
           <div className="flex flex-col gap-5 items-end justify-start w-[293px]">
             <div className="bg-white_A700 border border-gray_100 border-solid flex flex-col gap-5 items-center justify-center p-8 sm:px-5 rounded-[24px] w-full">
-              <div className="flex items-start justify-between w-full">
+              <div className="flex flex-col items-start justify-between w-full">
                 <div className="flex flex-col gap-1 items-center justify-start self-stretch w-auto">
                   <Text
                     className="font-normal not-italic text-bluegray_400 text-left w-auto"
@@ -27,9 +27,9 @@ const BillPayModalPage: React.FC = () => {
                   ></Text>
                 </div>
               </div>
-              <div className="flex items-start justify-start w-full">
+              <div className="flex flex-col items-start justify-start w-full">
                 <div className="flex flex-col gap-[-1px] items-start justify-start w-full">
-                  <div className="border border-bluegray_50 border-solid flex items-center justify-start px-3.5 py-2.5 rounded-bl-none rounded-br-none rounded-tl-[20px] rounded-tr-[20px] w-full">
+                  <div className="border border-bluegray_50 border-solid flex flex-col items-center justify-start px-3.5 py-2.5 rounded-bl-none rounded-br-none rounded-tl-[20px] rounded-tr-[20px] w-full">
                     <Img
                       src="images/img__10x114.png"
                       className="h-2.5 md:h-auto object-cover w-[114px]"
@@ -53,7 +53,12 @@ const BillPayModalPage: React.FC = () => {
                 </div>
               </div>
               <div className="flex flex-col gap-3 items-center justify-start w-full">
-                <Button className="bg-deep_orange_100 cursor-pointer font-medium px-4 py-2.5 rounded-[20px] text-center text-lime_50 text-sm w-full">
+                <Button
+                  className="cursor-pointer font-medium text-center text-lime_50 text-sm w-full"
+                  shape="CircleBorder20"
+                  size="md"
+                  variant="FillDeeporange100"
+                >
                   Pay Bill
                 </Button>
                 <Text
@@ -62,13 +67,18 @@ const BillPayModalPage: React.FC = () => {
                 ></Text>
               </div>
             </div>
-            <Button className="bg-yellow_900 cursor-pointer font-medium min-w-[73px] sm:px-5 px-6 py-2.5 rounded-[20px] text-center text-sm text-white_A700 w-auto">
+            <Button
+              className="cursor-pointer font-medium min-w-[73px] text-center text-sm text-white_A700 w-auto"
+              shape="CircleBorder20"
+              size="md"
+              variant="FillYellow900"
+            >
               Pay
             </Button>
           </div>
           <div className="flex flex-col gap-5 items-end justify-start w-[293px]">
             <div className="bg-white_A700 border border-gray_100 border-solid flex flex-col gap-5 items-center justify-center p-8 sm:px-5 rounded-[24px] w-full">
-              <div className="flex items-start justify-between w-full">
+              <div className="flex flex-col items-start justify-between w-full">
                 <div className="flex flex-col gap-1 items-center justify-start self-stretch w-auto">
                   <Text
                     className="font-normal not-italic text-bluegray_400 text-left w-auto"
@@ -83,7 +93,7 @@ const BillPayModalPage: React.FC = () => {
                   ></Text>
                 </div>
               </div>
-              <div className="flex items-start justify-start w-full">
+              <div className="flex flex-col items-start justify-start w-full">
                 <div className="flex flex-col gap-[-1px] items-start justify-start w-full">
                   <div className="border border-bluegray_50 border-solid flex flex-row gap-[18px] items-center justify-start px-3.5 py-2.5 rounded-bl-none rounded-br-none rounded-tl-[20px] rounded-tr-[20px] w-full">
                     <Img
@@ -115,7 +125,7 @@ const BillPayModalPage: React.FC = () => {
                 </div>
               </div>
               <div className="flex flex-col gap-3 items-center justify-start w-full">
-                <div className="bg-yellow_900 flex items-center justify-center px-4 py-2 rounded-[20px] w-full">
+                <div className="bg-yellow_900 flex flex-col items-center justify-center px-4 py-2 rounded-[20px] w-full">
                   <Img
                     src="images/img_heroiconsoutli.svg"
                     className="h-6 w-6"
@@ -128,13 +138,18 @@ const BillPayModalPage: React.FC = () => {
                 ></Text>
               </div>
             </div>
-            <Button className="bg-yellow_900 cursor-pointer font-medium min-w-[73px] sm:px-5 px-6 py-2.5 rounded-[20px] text-center text-sm text-white_A700 w-auto">
+            <Button
+              className="cursor-pointer font-medium min-w-[73px] text-center text-sm text-white_A700 w-auto"
+              shape="CircleBorder20"
+              size="md"
+              variant="FillYellow900"
+            >
               Pay
             </Button>
           </div>
           <div className="flex flex-col gap-5 items-end justify-start w-[293px]">
             <div className="bg-white_A700 border border-gray_100 border-solid flex flex-col gap-5 items-center justify-center p-8 sm:px-5 rounded-[24px] w-full">
-              <div className="flex items-start justify-between w-full">
+              <div className="flex flex-col items-start justify-between w-full">
                 <div className="flex flex-col gap-1 items-center justify-start self-stretch w-auto">
                   <Text
                     className="font-normal not-italic text-bluegray_400 text-left w-auto"
@@ -187,7 +202,12 @@ const BillPayModalPage: React.FC = () => {
                 </Text>
               </div>
               <div className="flex flex-col gap-3 items-center justify-start w-full">
-                <Button className="bg-deep_orange_100 cursor-pointer font-medium px-4 py-2.5 rounded-[20px] text-center text-lime_50 text-sm w-full">
+                <Button
+                  className="cursor-pointer font-medium text-center text-lime_50 text-sm w-full"
+                  shape="CircleBorder20"
+                  size="md"
+                  variant="FillDeeporange100"
+                >
                   Pay Bill
                 </Button>
                 <Text
@@ -196,13 +216,18 @@ const BillPayModalPage: React.FC = () => {
                 ></Text>
               </div>
             </div>
-            <Button className="bg-yellow_900 cursor-pointer font-medium min-w-[73px] sm:px-5 px-6 py-2.5 rounded-[20px] text-center text-sm text-white_A700 w-auto">
+            <Button
+              className="cursor-pointer font-medium min-w-[73px] text-center text-sm text-white_A700 w-auto"
+              shape="CircleBorder20"
+              size="md"
+              variant="FillYellow900"
+            >
               Pay
             </Button>
           </div>
           <div className="flex flex-col gap-5 items-end justify-start w-[293px]">
             <div className="bg-white_A700 border border-gray_100 border-solid flex flex-col gap-5 items-center justify-center p-8 sm:px-5 rounded-[24px] w-full">
-              <div className="flex items-start justify-between w-full">
+              <div className="flex flex-col items-start justify-between w-full">
                 <div className="flex flex-col gap-1 items-center justify-start self-stretch w-auto">
                   <Text
                     className="font-normal not-italic text-bluegray_400 text-left w-auto"
@@ -217,7 +242,7 @@ const BillPayModalPage: React.FC = () => {
                   ></Text>
                 </div>
               </div>
-              <div className="flex items-start justify-start w-full">
+              <div className="flex flex-col items-start justify-start w-full">
                 <div className="flex flex-col gap-[-1px] items-start justify-start w-full">
                   <div className="border border-bluegray_50 border-solid flex flex-row gap-[18px] items-center justify-start px-3.5 py-2.5 rounded-bl-none rounded-br-none rounded-tl-[20px] rounded-tr-[20px] w-full">
                     <Img
@@ -249,7 +274,12 @@ const BillPayModalPage: React.FC = () => {
                 </div>
               </div>
               <div className="flex flex-col gap-3 items-center justify-start w-full">
-                <Button className="bg-yellow_900 cursor-pointer font-medium px-4 py-2.5 rounded-[20px] text-center text-sm text-white_A700 w-full">
+                <Button
+                  className="cursor-pointer font-medium text-center text-sm text-white_A700 w-full"
+                  shape="CircleBorder20"
+                  size="md"
+                  variant="FillYellow900"
+                >
                   Pay Bill
                 </Button>
                 <Text
@@ -258,7 +288,12 @@ const BillPayModalPage: React.FC = () => {
                 ></Text>
               </div>
             </div>
-            <Button className="bg-yellow_900 cursor-pointer font-medium min-w-[73px] sm:px-5 px-6 py-2.5 rounded-[20px] text-center text-sm text-white_A700 w-auto">
+            <Button
+              className="cursor-pointer font-medium min-w-[73px] text-center text-sm text-white_A700 w-auto"
+              shape="CircleBorder20"
+              size="md"
+              variant="FillYellow900"
+            >
               Pay
             </Button>
           </div>

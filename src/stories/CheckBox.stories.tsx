@@ -9,4 +9,4 @@ export default {
 
 export const SampleCheckbox: Story<any> = (args) => <CheckBox {...args} />;
 
-SampleCheckbox.args = { label: "Checkbox", inputClassName: "mr-1" };
+SampleCheckbox.args = { label: "Checkbox", size: "sm", inputClassName: "mr-1" };

@@ -45,7 +45,7 @@ const DashboardMetrics: React.FC<DashboardMetricsProps> = (props) => {
           className="sm:flex-col flex-row md:gap-10 grid sm:grid-cols-1 md:grid-cols-2 grid-cols-4 justify-between w-full"
           orientation="horizontal"
         >
-          <div className="flex items-start justify-start self-stretch w-auto">
+          <div className="flex flex-col items-start justify-start self-stretch w-auto">
             <div className="flex flex-col gap-0.5 items-start justify-start self-stretch w-auto">
               <div className="flex flex-row gap-2 items-center justify-start self-stretch w-auto">
                 <Text
@@ -70,7 +70,7 @@ const DashboardMetrics: React.FC<DashboardMetricsProps> = (props) => {
               </Text>
             </div>
           </div>
-          <div className="flex items-start justify-start self-stretch w-auto">
+          <div className="flex flex-col items-start justify-start self-stretch w-auto">
             <div className="flex flex-col gap-0.5 items-start justify-start self-stretch w-auto">
               <div className="flex flex-row gap-2 items-center justify-start self-stretch w-auto">
                 <Text
@@ -95,7 +95,7 @@ const DashboardMetrics: React.FC<DashboardMetricsProps> = (props) => {
               </Text>
             </div>
           </div>
-          <div className="flex items-start justify-start self-stretch w-auto">
+          <div className="flex flex-col items-start justify-start self-stretch w-auto">
             <div className="flex flex-col gap-0.5 items-start justify-start self-stretch w-auto">
               <div className="flex flex-row gap-2 items-center justify-start self-stretch w-auto">
                 <Text
@@ -120,7 +120,7 @@ const DashboardMetrics: React.FC<DashboardMetricsProps> = (props) => {
               </Text>
             </div>
           </div>
-          <div className="flex items-start justify-start self-stretch w-auto">
+          <div className="flex flex-col items-start justify-start self-stretch w-auto">
             <div className="flex flex-col gap-0.5 items-start justify-start self-stretch w-auto">
               <div className="flex flex-row gap-2 items-center justify-start self-stretch w-auto">
                 <Text

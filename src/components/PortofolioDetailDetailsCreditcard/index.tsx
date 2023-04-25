@@ -16,7 +16,7 @@ const PortofolioDetailDetailsCreditcard: React.FC<
       <div className={props.className}>
         <div className="flex flex-col items-start justify-start w-[95%] md:w-full">
           <div className="flex flex-row items-start justify-between w-full">
-            <div className="bg-orange_50 flex items-center justify-start mt-[39px] rounded-lg w-[19%]">
+            <div className="bg-orange_50 flex flex-col items-center justify-start mt-[39px] rounded-lg w-[19%]">
               <div className="flex flex-row items-end justify-evenly w-full">
                 <div className="flex flex-col gap-3 h-4 items-center justify-start my-[13px] w-4">
                   <Line className="bg-white_A700 h-0.5 rotate-[180deg] w-full" />
@@ -33,7 +33,7 @@ const PortofolioDetailDetailsCreditcard: React.FC<
                 </div>
               </div>
             </div>
-            <div className="flex items-center justify-start md:pl-10 sm:pl-5 pl-[47px] w-[107px]">
+            <div className="flex flex-col items-center justify-start md:pl-10 sm:pl-5 pl-[47px] w-[107px]">
               <Img
                 src="images/img_untitleddesign.png"
                 className="h-10 md:h-auto object-cover w-[60px]"

@@ -21,7 +21,7 @@ const DealsThreeBars: React.FC<DealsThreeBarsProps> = (props) => {
   return (
     <>
       <div className={props.className}>
-        <div className="flex items-center justify-between max-w-[645px] pr-2.5 w-full">
+        <div className="flex flex-col items-center justify-between max-w-[645px] pr-2.5 w-full">
           <div className="bg-lime_50 flex flex-row gap-2.5 items-start justify-start max-w-[645px] px-2.5 py-1.5 rounded-lg w-full">
             <Text
               className="font-inter font-medium text-gray_900 text-left w-auto"
@@ -39,10 +39,13 @@ const DealsThreeBars: React.FC<DealsThreeBarsProps> = (props) => {
         </div>
         <div className="flex flex-row sm:gap-10 items-center justify-between max-w-[645px] pr-2.5 w-full">
           <Input
-            wrapClassName="bg-lime_50 px-2.5 py-1.5 rounded-lg w-auto"
+            wrapClassName="w-auto"
             className="font-inter font-medium p-0 placeholder:text-gray_900 text-gray_900 text-left text-sm w-full"
             name="frameNinetyNine"
             placeholder="Credit Card Payments"
+            shape="RoundedBorder8"
+            size="sm"
+            variant="FillLime50"
           ></Input>
           <Text
             className="font-inter font-medium text-gray_900 text-right w-auto"
@@ -66,7 +69,12 @@ const DealsThreeBars: React.FC<DealsThreeBarsProps> = (props) => {
           </Text>
         </div>
         <div className="flex flex-row sm:gap-10 items-center justify-between max-w-[645px] pr-2.5 w-full">
-          <Button className="bg-lime_50 cursor-pointer font-inter font-medium px-2.5 py-1.5 rounded-lg text-center text-gray_900 text-sm w-[70px]">
+          <Button
+            className="cursor-pointer font-inter font-medium text-center text-gray_900 text-sm w-[70px]"
+            shape="RoundedBorder8"
+            size="sm"
+            variant="FillLime50"
+          >
             {props?.travel}
           </Button>
           <Text

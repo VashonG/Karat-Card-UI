@@ -34,10 +34,13 @@ const LoginLogin: React.FC<LoginLoginProps> = (props) => {
               {props?.email}
             </Text>
             <Input
-              wrapClassName="border border-bluegray_50 border-solid px-3.5 py-2.5 rounded-[20px] w-full"
+              wrapClassName="w-full"
               className="font-inter font-normal not-italic p-0 placeholder:text-gray_900 text-gray_900 text-left text-sm w-full"
               name="email_One"
               placeholder="vashon@kaped.io"
+              shape="CircleBorder20"
+              size="md"
+              variant="OutlineBluegray50"
             ></Input>
           </div>
           <div className="flex flex-col gap-2 items-start justify-start w-[272px]">
@@ -48,10 +51,13 @@ const LoginLogin: React.FC<LoginLoginProps> = (props) => {
               {props?.emailTwo}
             </Text>
             <Input
-              wrapClassName="border border-bluegray_50 border-solid px-3.5 py-2.5 rounded-[20px] w-full"
+              wrapClassName="w-full"
               className="font-inter font-normal not-italic p-0 placeholder:text-bluegray_200 text-bluegray_200 text-left text-sm w-full"
               name="input"
               placeholder="Placeholder"
+              shape="CircleBorder20"
+              size="md"
+              variant="OutlineBluegray50"
             ></Input>
           </div>
           <Text
@@ -60,7 +66,12 @@ const LoginLogin: React.FC<LoginLoginProps> = (props) => {
           >
             {props?.forgotpassword}
           </Text>
-          <Button className="bg-yellow_900 cursor-pointer font-inter font-medium px-4 py-2.5 rounded-[20px] text-center text-sm text-white_A700 w-full">
+          <Button
+            className="cursor-pointer font-inter font-medium text-center text-sm text-white_A700 w-full"
+            shape="CircleBorder20"
+            size="md"
+            variant="FillYellow900"
+          >
             {props?.loginOne}
           </Button>
         </div>

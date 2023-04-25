@@ -9,9 +9,9 @@ const WebApplicationThreePage: React.FC = () => {
 
   return (
     <>
-      <div className="bg-white_A700 flex font-inter items-center justify-start mx-auto p-[100px] md:px-10 sm:px-5 w-full">
+      <div className="bg-white_A700 flex flex-col font-inter items-center justify-start mx-auto p-[100px] md:px-10 sm:px-5 w-full">
         <div className="flex flex-col gap-8 items-center justify-start max-w-screen-sm mb-[126px] w-full">
-          <div className="flex items-center justify-center w-full">
+          <div className="flex flex-col items-center justify-center w-full">
             <Img
               src="images/img_k21.png"
               className="h-[50px] md:h-auto object-cover w-[150px]"
@@ -104,14 +104,16 @@ const WebApplicationThreePage: React.FC = () => {
                         Apartment, unit, suite, or floor # (Optional)
                       </Text>
                       <Input
-                        wrapClassName="border border-bluegray_50 border-solid flex h-10 px-3.5 py-2.5 rounded-[20px] w-full"
+                        wrapClassName="flex h-10 px-3.5 py-2.5 w-full"
                         className="p-0 w-full"
                         name="input_One"
                         placeholder=""
+                        shape="CircleBorder20"
+                        variant="OutlineBluegray50"
                       ></Input>
                     </div>
                   </div>
-                  <div className="flex items-start justify-start w-full">
+                  <div className="flex flex-col items-start justify-start w-full">
                     <WebApplicationTwoInput
                       className="flex flex-col items-start justify-start w-full"
                       emailEight="City"
@@ -126,7 +128,7 @@ const WebApplicationThreePage: React.FC = () => {
                         State
                       </Text>
                       <SelectBox
-                        className="bg-white_A700 border border-bluegray_50 border-solid font-medium px-3.5 py-2.5 rounded-[20px] text-gray_900 text-left text-sm w-full"
+                        className="font-medium text-gray_900 text-left text-sm w-full"
                         placeholderClassName="text-gray_900"
                         name="input_Three"
                         placeholder="California"
@@ -139,6 +141,9 @@ const WebApplicationThreePage: React.FC = () => {
                             alt="arrow_down"
                           />
                         }
+                        shape="CircleBorder20"
+                        size="sm"
+                        variant="White"
                       ></SelectBox>
                     </div>
                     <WebApplicationTwoInput
@@ -150,13 +155,13 @@ const WebApplicationThreePage: React.FC = () => {
               </div>
             </div>
             <div className="flex flex-row sm:gap-10 items-center justify-between px-1.5 w-full">
-              <div className="h-10 relative w-[79px]">
+              <div className="h-10 md:h-[37px] relative w-[79px]">
                 <Img
                   src="images/img_arrowleft.svg"
                   className="absolute h-5 inset-y-[0] left-[0] my-auto w-5"
                   alt="arrowleft"
                 />
-                <div className="absolute flex h-full inset-y-[0] items-center justify-center my-auto px-4 py-2.5 right-[0] rounded-lg self-stretch w-auto">
+                <div className="absolute flex flex-col h-full inset-y-[0] items-center justify-center my-auto px-4 py-2.5 right-[0] rounded-lg self-stretch w-auto">
                   <Text
                     className="font-medium text-bluegray_400 text-left w-auto"
                     variant="body1"
@@ -169,7 +174,7 @@ const WebApplicationThreePage: React.FC = () => {
                 className="common-pointer flex relative w-[78px]"
                 onClick={() => navigate("/webapplicationfour")}
               >
-                <div className="flex items-center justify-center my-auto px-4 py-2.5 rounded-lg self-stretch w-auto">
+                <div className="flex flex-col items-center justify-center my-auto px-4 py-2.5 rounded-lg self-stretch w-auto">
                   <Text
                     className="font-medium text-gray_900 text-left w-auto"
                     variant="body1"

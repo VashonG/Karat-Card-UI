@@ -1,12 +1,14 @@
 import React from "react";
 import { ErrorMessage } from "../../components/ErrorMessage";
 
+const sizes = { sm: "" };
+
 export type CheckboxProps = Omit<
   React.DetailedHTMLProps<
     React.InputHTMLAttributes<HTMLInputElement>,
     HTMLInputElement
   >,
-  "size" | "prefix" | "type"
+  "size" | "prefix" | "type" | "onChange"
 > &
   Partial<{
     inputClassName: string;
@@ -15,6 +17,9 @@ export type CheckboxProps = Omit<
     label: string;
     errors: string[];
     id: string;
+    onChange: Function;
+
+    size: keyof typeof sizes;
   }>;
 
 const CheckBox = React.forwardRef<HTMLInputElement, CheckboxProps>(
@@ -27,19 +32,25 @@ const CheckBox = React.forwardRef<HTMLInputElement, CheckboxProps>(
       label = "",
       errors = [],
       id = "checkbox_id",
-
+      onChange,
+      size = "",
       ...restProps
     },
     ref
   ) => {
+    const handleChange: React.ChangeEventHandler<HTMLInputElement> = (e) => {
+      if (onChange) onChange(e?.target?.checked);
+    };
+
     return (
       <>
         <div className={className}>
           <input
-            className={`${inputClassName}`}
+            className={`${inputClassName} ${(size && sizes[size]) || ""}`}
             ref={ref}
             type="checkbox"
             name={name}
+            onChange={handleChange}
             {...restProps}
             id={id}
           />

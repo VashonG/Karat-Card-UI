@@ -10,6 +10,12 @@ const selectOptions: selectOptionType[] = [
   { value: "option3", label: "Option3" },
 ];
 
+const variants = {
+  White: "bg-white_A700 border border-bluegray_50 border-solid",
+} as const;
+const shapes = { CircleBorder20: "rounded-[20px]" } as const;
+const sizes = { sm: "p-2.5" } as const;
+
 export type SelectProps = Omit<Props, "getOptionLabel"> &
   Partial<{
     placeholder: string;
@@ -23,6 +29,9 @@ export type SelectProps = Omit<Props, "getOptionLabel"> &
     errors: string[];
     indicator: React.ReactElement;
     getOptionLabel: (e: any) => string;
+    shape: keyof typeof shapes;
+    variant: keyof typeof variants;
+    size: keyof typeof sizes;
   }>;
 
 const SelectBox = React.forwardRef<any, SelectProps>(
@@ -39,7 +48,9 @@ const SelectBox = React.forwardRef<any, SelectProps>(
       value = "",
       errors = [],
       indicator,
-
+      shape = "",
+      variant = "",
+      size = "",
       ...restProps
     },
     ref
@@ -60,7 +71,9 @@ const SelectBox = React.forwardRef<any, SelectProps>(
         <Select
           ref={ref}
           options={options}
-          className={`${className}`}
+          className={`${className} ${(shape && shapes[shape]) || ""} ${
+            (size && sizes[size]) || ""
+          } ${(variant && variants[variant]) || ""}`}
           placeholder={
             <div className={placeholderClassName}>{placeholder}</div>
           }

@@ -8,9 +8,9 @@ const WebApplicationTwelvePage: React.FC = () => {
 
   return (
     <>
-      <div className="bg-white_A700 flex font-inter items-center justify-start mx-auto p-[100px] md:px-10 sm:px-5 w-full">
+      <div className="bg-white_A700 flex flex-col font-inter items-center justify-start mx-auto p-[100px] md:px-10 sm:px-5 w-full">
         <div className="flex flex-col gap-8 items-center justify-start max-w-screen-sm mb-[564px] w-full">
-          <div className="flex items-center justify-center w-full">
+          <div className="flex flex-col items-center justify-center w-full">
             <Img
               src="images/img_k21.png"
               className="h-[50px] md:h-auto object-cover w-[150px]"
@@ -73,7 +73,7 @@ const WebApplicationTwelvePage: React.FC = () => {
                 </div>
               </List>
               <div className="flex flex-col gap-5 items-center justify-center w-full">
-                <div className="flex items-start justify-start pb-4 w-full">
+                <div className="flex flex-col items-start justify-start pb-4 w-full">
                   <Text
                     className="font-medium text-gray_900 text-left w-auto"
                     as="h5"
@@ -83,7 +83,7 @@ const WebApplicationTwelvePage: React.FC = () => {
                   </Text>
                 </div>
                 <div className="flex sm:flex-col flex-row gap-3 items-start justify-start w-full">
-                  <div className="flex items-start justify-start pt-0.5 self-stretch w-auto">
+                  <div className="flex flex-col items-start justify-start pt-0.5 self-stretch w-auto">
                     <Img
                       src="images/img_file_white_a700.svg"
                       className="h-4 w-4"
@@ -114,13 +114,13 @@ const WebApplicationTwelvePage: React.FC = () => {
               </div>
             </div>
             <div className="flex flex-row sm:gap-10 items-center justify-between pl-1.5 w-full">
-              <div className="h-10 relative w-[79px]">
+              <div className="h-10 md:h-[37px] relative w-[79px]">
                 <Img
                   src="images/img_arrowleft.svg"
                   className="absolute h-5 inset-y-[0] left-[0] my-auto w-5"
                   alt="arrowleft"
                 />
-                <div className="absolute flex h-full inset-y-[0] items-center justify-center my-auto px-4 py-2.5 right-[0] rounded-lg self-stretch w-auto">
+                <div className="absolute flex flex-col h-full inset-y-[0] items-center justify-center my-auto px-4 py-2.5 right-[0] rounded-lg self-stretch w-auto">
                   <Text
                     className="font-medium text-bluegray_400 text-left w-auto"
                     variant="body1"
@@ -129,10 +129,13 @@ const WebApplicationTwelvePage: React.FC = () => {
                   </Text>
                 </div>
               </div>
-              <div className="flex items-center justify-start self-stretch w-auto">
+              <div className="flex flex-col items-center justify-start self-stretch w-auto">
                 <Button
-                  className="common-pointer bg-yellow_900 cursor-pointer font-medium min-w-[80px] px-4 py-2.5 rounded-[20px] text-center text-sm text-white_A700 w-auto"
+                  className="common-pointer cursor-pointer font-medium min-w-[80px] text-center text-sm text-white_A700 w-auto"
                   onClick={() => navigate("/")}
+                  shape="CircleBorder20"
+                  size="md"
+                  variant="FillYellow900"
                 >
                   Submit
                 </Button>

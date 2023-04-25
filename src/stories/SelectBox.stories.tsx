@@ -21,4 +21,10 @@ export default {
 
 export const SampleSelectbox: Story<any> = (args) => <SelectBox {...args} />;
 
-SampleSelectbox.args = { placeholder: "Select", className: "w-[300px]" };
+SampleSelectbox.args = {
+  placeholder: "Select",
+  shape: "CircleBorder20",
+  variant: "White",
+  size: "sm",
+  className: "w-[300px]",
+};

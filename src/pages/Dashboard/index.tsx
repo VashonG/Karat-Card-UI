@@ -11,7 +11,7 @@ import DashboardTable from "components/DashboardTable";
 const DashboardPage: React.FC = () => {
   return (
     <>
-      <div className="bg-white_A700 flex font-inter items-center justify-start mx-auto w-full">
+      <div className="bg-white_A700 flex flex-col font-inter items-center justify-start mx-auto w-full">
         <div className="flex md:flex-col flex-row gap-[34px] items-center justify-between max-w-[1408px] mx-auto md:px-5 w-full">
           <DashboardMenu className="bg-white_A700 flex flex-col h-[1235px] md:hidden justify-start outline outline-gray_100 w-[278px]" />
           <div className="flex flex-1 flex-col gap-5 items-center justify-start w-full">
@@ -23,9 +23,9 @@ const DashboardPage: React.FC = () => {
               >
                 Your overview
               </Text>
-              <div className="flex sm:flex-1 items-start justify-start w-[134px] sm:w-full">
+              <div className="flex sm:flex-1 flex-col items-start justify-start w-[134px] sm:w-full">
                 <SelectBox
-                  className="bg-white_A700 border border-bluegray_50 border-solid font-medium px-3.5 py-2.5 rounded-[20px] text-gray_900 text-left text-sm w-full"
+                  className="font-medium text-gray_900 text-left text-sm w-full"
                   placeholderClassName="text-gray_900"
                   name="input"
                   placeholder="This month"
@@ -38,6 +38,9 @@ const DashboardPage: React.FC = () => {
                       alt="arrow_down"
                     />
                   }
+                  shape="CircleBorder20"
+                  size="sm"
+                  variant="White"
                 ></SelectBox>
               </div>
             </div>
@@ -106,7 +109,7 @@ const DashboardPage: React.FC = () => {
                     Credit Applications
                   </Text>
                   <div className="flex relative w-[91px]">
-                    <div className="flex items-center justify-center my-auto px-4 py-2.5 rounded-lg self-stretch w-auto">
+                    <div className="flex flex-col items-center justify-center my-auto px-4 py-2.5 rounded-lg self-stretch w-auto">
                       <Text
                         className="font-medium text-gray_900 text-left w-auto"
                         variant="body1"

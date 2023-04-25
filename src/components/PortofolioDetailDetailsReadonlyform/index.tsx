@@ -45,8 +45,8 @@ const PortofolioDetailDetailsReadonlyform: React.FC<
               {props?.status6}
             </Text>
           ) : null}
-          <div className="flex flex-1 items-start justify-start w-full">
-            <div className="bg-green_50 flex items-start justify-start px-2 py-[3px] rounded-[11px] self-stretch w-auto">
+          <div className="flex flex-1 flex-col items-start justify-start w-full">
+            <div className="bg-green_50 flex flex-col items-start justify-start px-2 py-[3px] rounded-[11px] self-stretch w-auto">
               <div className="flex flex-row gap-2 items-center justify-start self-stretch w-auto">
                 {!!props?.ellipseone5 ? (
                   <div className="bg-green_300 h-1.5 rounded-[50%] w-1.5"></div>
@@ -73,8 +73,8 @@ const PortofolioDetailDetailsReadonlyform: React.FC<
               {props?.status6}
             </Text>
           ) : null}
-          <div className="flex flex-1 items-start justify-start w-full">
-            <div className="bg-green_50 flex items-start justify-start px-2 py-[3px] rounded-[11px] self-stretch w-auto">
+          <div className="flex flex-1 flex-col items-start justify-start w-full">
+            <div className="bg-green_50 flex flex-col items-start justify-start px-2 py-[3px] rounded-[11px] self-stretch w-auto">
               <div className="flex flex-row gap-2 items-center justify-start self-stretch w-auto">
                 {!!props?.ellipseone5 ? (
                   <div className="bg-green_300 h-1.5 rounded-[50%] w-1.5"></div>
@@ -101,8 +101,8 @@ const PortofolioDetailDetailsReadonlyform: React.FC<
               {props?.status6}
             </Text>
           ) : null}
-          <div className="flex flex-1 items-start justify-start w-full">
-            <div className="bg-red-100 flex items-start justify-start px-2 py-[3px] rounded-[11px] self-stretch w-auto">
+          <div className="flex flex-1 flex-col items-start justify-start w-full">
+            <div className="bg-red-100 flex flex-col items-start justify-start px-2 py-[3px] rounded-[11px] self-stretch w-auto">
               <div className="flex flex-row gap-2 items-center justify-start self-stretch w-auto">
                 {!!props?.ellipseone6 ? (
                   <div className="bg-red_300 h-1.5 rounded-[50%] w-1.5"></div>
@@ -129,8 +129,8 @@ const PortofolioDetailDetailsReadonlyform: React.FC<
               {props?.status6}
             </Text>
           ) : null}
-          <div className="flex flex-1 items-start justify-start w-full">
-            <div className="bg-orange_51 flex items-start justify-start px-2 py-[3px] rounded-[11px] self-stretch w-auto">
+          <div className="flex flex-1 flex-col items-start justify-start w-full">
+            <div className="bg-orange_51 flex flex-col items-start justify-start px-2 py-[3px] rounded-[11px] self-stretch w-auto">
               <div className="flex flex-row gap-2 items-center justify-start self-stretch w-auto">
                 {!!props?.ellipseone3 ? (
                   <div className="bg-orange_A200 h-1.5 rounded-[50%] w-1.5"></div>
@@ -157,8 +157,8 @@ const PortofolioDetailDetailsReadonlyform: React.FC<
               {props?.status6}
             </Text>
           ) : null}
-          <div className="flex flex-1 items-start justify-start w-full">
-            <div className="bg-red-100 flex items-start justify-start px-2 py-[3px] rounded-[11px] self-stretch w-auto">
+          <div className="flex flex-1 flex-col items-start justify-start w-full">
+            <div className="bg-red-100 flex flex-col items-start justify-start px-2 py-[3px] rounded-[11px] self-stretch w-auto">
               <div className="flex flex-row gap-2 items-center justify-start self-stretch w-auto">
                 {!!props?.ellipseone6 ? (
                   <div className="bg-red_300 h-1.5 rounded-[50%] w-1.5"></div>
@@ -185,8 +185,8 @@ const PortofolioDetailDetailsReadonlyform: React.FC<
               {props?.status6}
             </Text>
           ) : null}
-          <div className="flex flex-1 items-start justify-start w-full">
-            <div className="bg-green_50 flex items-start justify-start px-2 py-[3px] rounded-[11px] self-stretch w-auto">
+          <div className="flex flex-1 flex-col items-start justify-start w-full">
+            <div className="bg-green_50 flex flex-col items-start justify-start px-2 py-[3px] rounded-[11px] self-stretch w-auto">
               <div className="flex flex-row gap-2 items-center justify-start self-stretch w-auto">
                 {!!props?.ellipseone5 ? (
                   <div className="bg-green_300 h-1.5 rounded-[50%] w-1.5"></div>
@@ -213,8 +213,8 @@ const PortofolioDetailDetailsReadonlyform: React.FC<
               {props?.status6}
             </Text>
           ) : null}
-          <div className="flex flex-1 items-start justify-start w-full">
-            <div className="bg-red-100 flex items-start justify-start px-2 py-[3px] rounded-[11px] self-stretch w-auto">
+          <div className="flex flex-1 flex-col items-start justify-start w-full">
+            <div className="bg-red-100 flex flex-col items-start justify-start px-2 py-[3px] rounded-[11px] self-stretch w-auto">
               <div className="flex flex-row gap-2 items-center justify-start self-stretch w-auto">
                 {!!props?.ellipseone6 ? (
                   <div className="bg-red_300 h-1.5 rounded-[50%] w-1.5"></div>
